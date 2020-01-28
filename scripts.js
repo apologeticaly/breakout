@@ -78,14 +78,7 @@ function collisionDetection() {
 function drawBall() {
   ctx.beginPath();
   ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-
-  if (score < 5) {
-    ctx.fillStyle = '#fff';
-  } else if (score > 5 || score > 13) {
-    ctx.fillStyle = '#121212';
-  } else {
-    ctx.fillStyle = '#fff';
-  }
+  ctx.fillStyle = '#fff';
 
   ctx.fill();
   ctx.closePath();
@@ -117,20 +110,6 @@ function drawBricks() {
         } else {
           ctx.fillStyle = '#ABFFA0';
         }
-
-        // switch (r) {
-        //   case 0:
-        //     // color A
-        //     break
-        //   case 1:
-        //       // color B
-        //     break
-        //   case 2:
-        //     // color C
-        //     break
-        //   default:
-        //     // color D
-        // }
 
         ctx.fill();
         ctx.closePath();
