@@ -1,11 +1,12 @@
 {
   "name": "breakout",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/apologeticaly/breakout.git"
@@ -20,6 +21,10 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.0"
-  }
+    "eslint-plugin-import": "^2.20.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {},
+  "description": ""
 }
